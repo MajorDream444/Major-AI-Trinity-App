@@ -1,0 +1,13 @@
+{
+  "name": "major-ai-trinity-app",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @trinity/web dev",
+    "build:web": "pnpm --filter @trinity/web build",
+    "start:web": "pnpm --filter @trinity/web start",
+    "dev:mobile": "pnpm --filter @trinity/mobile start",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
