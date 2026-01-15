@@ -11,6 +11,7 @@ export function Layout({ title, children }: { title: string; children: React.Rea
           <Link href="/dashboard">Dashboard</Link>
           <Link href="/agent-chat">Agent Chat</Link>
           <Link href="/journal">Journal</Link>
+          <Link href="/login">Login</Link>
         </nav>
       </header>
       <main className="px-6 py-8 max-w-5xl mx-auto">
