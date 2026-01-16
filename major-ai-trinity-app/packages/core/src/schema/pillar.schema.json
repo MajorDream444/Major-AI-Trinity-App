@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pillar",
+  "type": "object",
+  "required": ["id","domain","number","name","tagline","reflectionPrompt","majorMove"],
+  "properties": {
+    "id": {"type":"string"},
+    "domain": {"type":"string","enum":["life","money","tech"]},
+    "number": {"type":"integer","minimum":1,"maximum":10},
+    "name": {"type":"string"},
+    "tagline": {"type":"string"},
+    "reflectionPrompt": {"type":"string"},
+    "majorMove": {"type":"string"}
+  },
+  "additionalProperties": false
+}

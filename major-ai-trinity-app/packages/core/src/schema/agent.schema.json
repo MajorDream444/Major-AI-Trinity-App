@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentPersona",
+  "type": "object",
+  "required": ["id","name","domain","archetype","voice","do","dont","systemPrompt"],
+  "properties": {
+    "id": {"type":"string","enum":["PILLAR","COME_UP","CODEX"]},
+    "name": {"type":"string"},
+    "domain": {"type":"string","enum":["life","money","tech"]},
+    "archetype": {"type":"string"},
+    "voice": {"type":"string"},
+    "do": {"type":"array","items":{"type":"string"}},
+    "dont": {"type":"array","items":{"type":"string"}},
+    "systemPrompt": {"type":"string"}
+  },
+  "additionalProperties": false
+}
